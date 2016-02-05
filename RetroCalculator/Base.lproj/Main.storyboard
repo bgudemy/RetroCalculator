@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fh-ztH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SyA-fh-ztH" secondAttribute="height" multiplier="1:1" id="JYB-CV-v7Y"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O7V-Ub-uIJ">
+                                <rect key="frame" x="177" y="81" width="247" height="439"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="tPa-m6-pIK">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="8EH-QV-Kvv"/>
+                                            <constraint firstAttribute="height" constant="65" id="bai-um-GfI"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="8EH-QV-Kvv"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="Pi2-gc-A0Q">
+                                        <rect key="frame" x="0.0" y="65" width="247" height="374"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="374" id="ZPw-4i-ebF"/>
+                                            <constraint firstAttribute="width" secondItem="Pi2-gc-A0Q" secondAttribute="height" multiplier="247:374" id="qMa-04-yIc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SyA-fh-ztH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Va-JB-jIS"/>
+                            <constraint firstItem="O7V-Ub-uIJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9v0-Vi-pG2"/>
+                            <constraint firstAttribute="trailing" secondItem="SyA-fh-ztH" secondAttribute="trailing" id="KFM-u7-2NK"/>
+                            <constraint firstItem="O7V-Ub-uIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O6K-wr-Q09"/>
+                            <constraint firstItem="SyA-fh-ztH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pMc-wu-pcr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SyA-fh-ztH" secondAttribute="bottom" id="uSH-NW-MK7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="338"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backpanel" width="620" height="938"/>
+        <image name="counter" width="516" height="133"/>
+        <image name="space-bg" width="988" height="946"/>
+    </resources>
 </document>
