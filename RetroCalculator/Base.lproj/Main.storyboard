@@ -24,8 +24,8 @@
                                     <constraint firstAttribute="width" secondItem="SyA-fh-ztH" secondAttribute="height" multiplier="1:1" id="JYB-CV-v7Y"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="VGt-ks-haT">
-                                <rect key="frame" x="0.0" y="518" width="600" height="82"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="VGt-ks-haT">
+                                <rect key="frame" x="0.0" y="528" width="600" height="72"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O7V-Ub-uIJ" userLabel="background">
                                 <rect key="frame" x="177" y="81" width="247" height="439"/>
