@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -201,6 +206,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="558434" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoA-Qy-QwJ">
+                                <rect key="frame" x="184" y="93" width="230" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Thl-ee-osF"/>
+                                    <constraint firstAttribute="width" constant="230" id="tfc-hS-Fp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -208,12 +222,14 @@
                             <constraint firstItem="SyA-fh-ztH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Va-JB-jIS"/>
                             <constraint firstAttribute="trailing" secondItem="VGt-ks-haT" secondAttribute="trailing" id="9Ak-d8-i7p"/>
                             <constraint firstItem="O7V-Ub-uIJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9v0-Vi-pG2"/>
+                            <constraint firstItem="LoA-Qy-QwJ" firstAttribute="trailing" secondItem="O7V-Ub-uIJ" secondAttribute="trailing" constant="-10" id="CIY-wl-GLm"/>
                             <constraint firstAttribute="trailing" secondItem="SyA-fh-ztH" secondAttribute="trailing" id="KFM-u7-2NK"/>
                             <constraint firstItem="O7V-Ub-uIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O6K-wr-Q09"/>
                             <constraint firstItem="Pi2-gc-A0Q" firstAttribute="top" secondItem="B1J-Es-vyt" secondAttribute="bottom" constant="-359" id="fTa-dK-uxr"/>
                             <constraint firstItem="SyA-fh-ztH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pMc-wu-pcr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SyA-fh-ztH" secondAttribute="bottom" id="uSH-NW-MK7"/>
                             <constraint firstItem="VGt-ks-haT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wH5-S9-F2u"/>
+                            <constraint firstItem="LoA-Qy-QwJ" firstAttribute="top" secondItem="O7V-Ub-uIJ" secondAttribute="top" constant="12" id="xpG-yV-b3V"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VGt-ks-haT" secondAttribute="bottom" id="zkD-sV-eZp"/>
                         </constraints>
                     </view>
