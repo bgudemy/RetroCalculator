@@ -194,6 +194,9 @@
                                                     <constraint firstAttribute="height" constant="65" id="ei5-LN-YuS"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="onPlusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7N-h4-cMh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmX-49-Gl9" userLabel="/">
                                                 <rect key="frame" x="160" y="0.0" width="65" height="65"/>
@@ -202,6 +205,9 @@
                                                     <constraint firstAttribute="width" constant="65" id="tYv-Rd-iQS"/>
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="onDividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Buf-H3-lDj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -223,6 +229,9 @@
                                                     <constraint firstAttribute="height" constant="65" id="ncg-OZ-YrS"/>
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="onSubtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3l-P7-JaF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrY-Wa-AdD">
                                                 <rect key="frame" x="160" y="0.0" width="65" height="65"/>
@@ -231,6 +240,9 @@
                                                     <constraint firstAttribute="width" constant="65" id="LNj-VP-aFo"/>
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="onMultiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVL-em-iDe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -263,6 +275,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VGt-ks-haT" secondAttribute="bottom" id="zkD-sV-eZp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLbl" destination="LoA-Qy-QwJ" id="OYR-9I-n2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
