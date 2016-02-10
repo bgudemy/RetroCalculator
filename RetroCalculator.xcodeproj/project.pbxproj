@@ -12,6 +12,7 @@
 		D326D2EC1C651108003B6345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D326D2EA1C651108003B6345 /* Main.storyboard */; };
 		D326D2EE1C651108003B6345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D326D2ED1C651108003B6345 /* Assets.xcassets */; };
 		D326D2F11C651108003B6345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D326D2EF1C651108003B6345 /* LaunchScreen.storyboard */; };
+		D365417D1C67C1B70016B3FB /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D365417C1C67C1B70016B3FB /* btn.wav */; };
 		D3F30FBC1C6646CC0016BE3A /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3F30FBB1C6646CC0016BE3A /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		D326D2ED1C651108003B6345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D326D2F01C651108003B6345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D326D2F21C651108003B6345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D365417C1C67C1B70016B3FB /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		D3F30FBB1C6646CC0016BE3A /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 		D326D2E51C651108003B6345 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				D365417C1C67C1B70016B3FB /* btn.wav */,
 				D3F30FBB1C6646CC0016BE3A /* Minecraft.ttf */,
 				D326D2E61C651108003B6345 /* AppDelegate.swift */,
 				D326D2E81C651108003B6345 /* ViewController.swift */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D365417D1C67C1B70016B3FB /* btn.wav in Resources */,
 				D326D2F11C651108003B6345 /* LaunchScreen.storyboard in Resources */,
 				D326D2EE1C651108003B6345 /* Assets.xcassets in Resources */,
 				D3F30FBC1C6646CC0016BE3A /* Minecraft.ttf in Resources */,
